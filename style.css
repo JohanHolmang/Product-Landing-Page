@@ -13,7 +13,7 @@ html {
     overflow: hidden;
 }
 
-
+/*
 #result {
     border: 0;
     width: 100%;
@@ -29,6 +29,7 @@ html {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+*/
 
 /*---HEADER---*/
 
@@ -58,13 +59,12 @@ logo{
     margin-left: 20px;
 }
 
-@media(min-width:400px;) {
+@media(min-width:400px) {
     .container {
         display: flex; 
     }
 
 }
-
 
 /*---NAVBAR---*/
 
@@ -125,19 +125,14 @@ a{
 
 .fa {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal 14px/1 ;
     font-size: inherit;
     text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    
 }
 
 .fa-3x {
     font-size: 3em;
-}
-
-.fa-fire:before {
-    content: "\f06d";
 }
 
 #features .desc {
@@ -188,7 +183,7 @@ p {
     flex-direction: row;
     justify-content: center;
 }
-/*
+
 #pricing #cheap, #pricing #pricy, #pricing #expensive {
     display: flex;
     flex-direction: column;
@@ -208,7 +203,7 @@ p {
     text-transform: uppercase;
     font-weight: 700;
 }
-
+/*
 #pricing #cheap h2, #pricing #pricy h2, #pricing #expensive h2 {
     margin-top: 15px;
 }
@@ -240,7 +235,6 @@ p {
     background: transparent;
     cursor: pointer;
 }
-
 
 
 /*---FOOTER---*/
