@@ -9,9 +9,27 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#page-wrapper {
-    position: relative;
+html {
+    overflow: hidden;
 }
+
+/*
+#result {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: static;
+}
+
+#result-iframe-wrap {
+    height: 100%;
+    height: calc(100% - 69px);
+    position: relative;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+*/
 
 /*---HEADER---*/
 
@@ -23,12 +41,11 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(199, 191, 191);
+    background-color: #eee;
 }
 
-
-.logo{
-    width: 30px;
+.logo {
+    width: 2 0vw;
 }
 
 .logo.img {
@@ -52,15 +69,14 @@ header {
 /*---NAVBAR---*/
 
 nav {
-    font-weight: 100;
+    font-weight: 400;
 }
 
 nav ul {
-    width: 35em;
+    width: 35vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 li {
@@ -72,12 +88,10 @@ a {
     text-decoration: none;
 }
 
-
 .container {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    justify-content: center;
 }
 
 /*----SECTION----*/
@@ -88,9 +102,8 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 150px;
-    margin-top: 20px;
-    padding: 10px;
+    height: 200px;
+    margin-top: 50px;
 }
 
 #features {
@@ -105,21 +118,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 20px;
-    color: rgb(207, 157, 56);
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
 }
 
 .fa {
     display: inline-block;
-    font: normal 10px;
+    font: normal 14px/1;
     font-size: inherit;
     text-rendering: auto;
 
 }
 
 .fa-3x {
-    font-size: 10em;
+    font-size: 3em;
 }
 
 #features .desc {
@@ -133,13 +146,12 @@ a {
 
 h2 {
     display: block;
-    font-size: 25px;
-    margin-block-start: 20px;
-    margin-block-end: 20px;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    justify-content: center;
 }
 
 p {
@@ -172,7 +184,9 @@ p {
     justify-content: center;
 }
 
-#pricing #cheap, #pricing #modest, #pricing #pricy {
+#pricing #cheap,
+#pricing #modest,
+#pricing #pricy {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,7 +196,6 @@ p {
     border: 1px solid #000;
     border-radius: 3px;
 }
-
 
 .btn {
     padding: 0 20px;
@@ -195,7 +208,6 @@ p {
     background: transparent;
     cursor: pointer;
 }
-
 
 /*---FOOTER---*/
 
